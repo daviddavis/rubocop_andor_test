@@ -1,0 +1,20 @@
+AllCops:
+  RunRailsCops: true
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - 'db/**/*'
+    - 'db/**/*.rb'
+    - 'db/schema.rb'
+    - 'config/**/*'
+    - 'script/**/*'
+Style/CaseIndentation:
+  IndentWhenRelativeTo: case
+  IndentOneStep: true
+Style/FirstParameterIndentation:
+  EnforcedStyle: consistent
+Style/SpaceInsideStringInterpolation:
+  Enabled: false
